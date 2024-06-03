@@ -1,0 +1,56 @@
+ifc-mesh-recon-main:
+    mesh_file_path: 'data/s2b/mesh/residential.ply'
+    save_mesh_path: 'data/s2b/mesh/residential_den_loss_smooth.ply' 
+    #ifc_file: None
+    pcd: None
+    mesh: None
+    vertices: None
+    faces: None
+    ifc_class_schema: None
+    ifc_class: "IfcWall"
+    ifc_class_proxy: "IfcBuildingElement Proxy"
+    filename: residential
+    semantic_gt: None
+    pth_file_path: 'data/s2b/3DBIT00-20240120/residential.txt'
+    pcd_list: []
+    depth: 9
+    number_of_iterations: 10
+    plot: False
+    ifc_proxy_recon: False
+    ifc_elements_recon: True
+    dist_bins: 100
+    pth_pcd: True
+    label_num_list: []
+    meshes_path_list: []
+    iteration: 0
+    compute_sparsity_loss: False
+    pcd_elements_rgb_list: []
+    element_original_color_vertices: []
+    element_rgb_index: 0 
+    element_ifc_rgb: True
+    rgb_avg_pool: True
+    orign_pcd_mesh_recon: False
+    test_runs: [1,3,5,7,9,11,1,3,5,7,9,11,1,3,5,7,9,11] 
+    exp_record_base_path: "data/s2b/exp_record/"
+    o3d_visualizer: False
+    init_class_test: True
+    dataset_label_name: "3DBIT00",
+    lapaclacian_mesh_patition: []
+    mfs_inpsect: False
+pcd_eval:
+    fig_paths: ["data/s2b/exp_record/hallway_1_densities_distribution_bin_20.png",
+                "data/s2b/exp_record/hallway_1_densities_distribution_bin_20.png",
+                "data/s2b/exp_record/hallway_1_densities_distribution_bin_20.png",
+                "data/s2b/exp_record/hallway_1_densities_distribution_bin_20.png",
+                "data/s2b/exp_record/hallway_1_densities_distribution_bin_20.png",
+                "data/s2b/exp_record/hallway_1_densities_distribution_bin_20.png"]
+    o3d2_mathplotlib_plot: False
+    o3d2_mathplotlib_basename: "data/s2b/exp_record/o3d2_mathplotlib"
+    subplot_grid_plot: False
+    subplot_grid_basename: "data/s2b/exp_record/subplot_grid"
+    plot: False
+    histogram_basename: "data/s2b/exp_record/histogram"
+    heatmap_plot: False
+    heatmap_basename: "data/s2b/exp_record/heatmap"
+    exp_record_base_path: "data/s2b/exp_record/"
+    ascii_pcd_folder_path: "data/s2b/3DBIT00-20240120/annotated"

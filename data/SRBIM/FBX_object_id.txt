@@ -1,0 +1,16 @@
+FBX Object ID
+
+Educational
+B364551820701063A0
+
+Commercial
+B395111702901063A1
+
+Residential
+b357221524501063A0
+
+Public services:
+B333591671902063A0
+
+military cemetery:
+B355381731702063A0
