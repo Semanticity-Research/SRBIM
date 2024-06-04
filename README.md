@@ -5,7 +5,7 @@ SRBIM: A Unified Framework and Dataset for 3D Semantic Reconstruction of Built  
 
 #  Towards Automating the Retrospective Generation of BIM Models: A Unified Framework for 3D Semantic Reconstruction of the Built Environment
 <!-- **Pointcept** is a powerful and flexible codebase for point cloud perception research. It is also an official implementation of the following paper: -->
-**SRBIM** is a unified framework and dataset repo for Building Information Modeling. The paper dataset amd full code will be released soon. Part of the results and demo can be found in the can be found in the 
+**SRBIM**  is a unified framework and dataset repo for Building Information Modeling. The paper dataset amd full code will be released soon. Part of the results and demo can be found in the can be found in the 
 [Google Drive](https://drive.google.com/drive/folders/1Bl5Yx6oPL7om46EqePVFuLEOq_JDVCyJ?usp=sharing). Our preprocess data are availiable and can also be downloaded by filling the
 [Google Form](https://forms.gle/ADCLHHxHwtbaAsxR9)
 
