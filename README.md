@@ -27,10 +27,10 @@ SRBIM: A Unified Framework and Dataset for 3D Semantic Reconstruction of Built  
 - [✔] dataset and code preview for SRBIM
 - [✔] download link for the raw data of SRBIM dataset.
 - [✔] config for the SRBIM segmentation model training with S3DIS dataset.
-- [ ] Paper, dataset and full code for SRBIM
+<!--  - [ ] Paper, dataset and full code for SRBIM
 - [ ] BIM Models from SRBIM
 - [ ] Configs for trained segmentation models(SRBIM)
-- [ ] Pretrained models for SRBIM
+- [ ] Pretrained models for SRBIM  -->
 
 
 ## Installation
@@ -269,10 +269,12 @@ Model_1, Model_2, Model_3, Model_4, Ours, (a), (b), (c), (d), (e)
 If you find this project useful in your research, please consider cite:
 
 ```latex
-@misc{srbim2024,
-    title={SRBIM: A Unified Framework and Dataset for 3D Semantic Reconstruction of Built  Environment for Building Information Modeling},
-    author={SRBIM Contributors},
-    howpublished = {\url{https://github.com/BIMSRLab/SRBIM}},
-    year={2024}
+@misc{cheung2024automating,
+    title={Towards Automating the Retrospective Generation of BIM Models: A Unified Framework for 3D Semantic Reconstruction of the Built Environment},
+    author={Ka Lung Cheung and Chi Chung Lee},
+    year={2024},
+    eprint={2406.01480},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
 }
 ```
