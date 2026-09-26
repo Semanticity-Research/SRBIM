@@ -11,7 +11,6 @@ SRBIM: A Unified Framework and Dataset for 3D Semantic Reconstruction of Built  
 
 ## Highlights
 - *May, 2024*: Our paper is accepted by CVPRW'24!
-- *March, 2024*: **SRBIM** repo is created, the dataset, paper and full code will be released soon.
 
 ## Overview
 - [TODO](#todo)
