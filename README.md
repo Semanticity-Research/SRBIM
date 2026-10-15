@@ -241,53 +241,6 @@ python tools/train.py --config-file configs/scannet/semseg-pt-v2m2-0-base.py --o
 ## Model Zoo
 -->
 
-## Results
-
-<!-- #### BIM Models
-Download example BIM model reconstructed by [here](https://drive.google.com/drive/folders/1TRDg20NKiUeq6AGn192xOyv-OcdolQpd) -->
-
-#### Benchmark Results
-| Method | G | C | S3DIS mIoU (%) | S3DIS OA (%) | SensatUrban mIoU (%) | SensatUrban OA (%) | BuildingNet mIoU (%) | BuildingNet OA (%) |
-|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| MinkUNet | ✔ | ✔ | 65.6 | 88.6 | 40.9 | 84.1 | 24.6 | 61.0 |
-| SparseUNet | ✔ | ✔ | 57.5 | 86.1 | 54.5 | 86.2 | 23.8 | 58.2 |
-| Swin3D-S | ✔ | ✔ | **70.6** | 90.1 | 59.2 | 89.8 | 25.2 | 61.5 |
-| PTv1 | ✔ | ✔ | 69.7 | 90.0 | 53.3 | 90.4 | 24.5 | 61.3 |
-| **PTv2 (SRBIM)** | ✔ | ✔ | 70.0 | **90.9** | **62.5** | 91.0 | **25.4** | **62.3** |
-| (a) w/o pe.multiplier | ✔ | ✔ | 68.2 | 89.9 | 61.9 | **91.3** | 25.3 | 62.1 |
-| (b) w/o attn.qkv.bias | ✔ | ✔ | 67.9 | 89.8 | 61.0 | 90.1 | 24.2 | 60.5 |
-| (c) w/o pe.bias | ✔ | ✔ | 67.5 | 89.0 | 60.6 | 89.9 | 23.8 | 60.9 |
-| (d) w unpool.interp. | ✔ | ✔ | 68.9 | 90.0 | 61.2 | 89.2 | 25.2 | 62.2 |
-| (e) w/o color | ✔ | - | 62.9 | 86.8 | 58.5 | 86.2 | 19.4 | 59.1 |
-
-> **Note**:
-> - **G**: Geometry (point coordinates), **C**: Color (RGB).
-> - Models were evaluated under consistent conditions (identical splits, preprocessing, augmentations, and training epochs).
-> - **(a)–(e)** represent ablation study variants on the PTv2 backbone in SRBIM:
->   - **(a)** w/o `pe.multiplier`: without positional encoding multiplier.
->   - **(b)** w/o `attn.qkv.bias`: without query-key-value projection bias in attention.
->   - **(c)** w/o `pe.bias`: without positional encoding bias.
->   - **(d)** w `unpool.interp.`: with interpolation during unpooling.
->   - **(e)** w/o `color`: geometry-only input without color channels.
-
-## Acknowledgement
-
-This project is built upon [Pointcept](https://github.com/Pointcept/Pointcept), a powerful and flexible codebase for point cloud perception research. We thank the authors for their great work and contribution to the open-source community.
-
-Our benchmark results and framework implemented and benefited from the following excellent works:
-
-#### Model Backbones:
-- **MinkUNet**: [4D Spatio-Temporal ConvNets: Minkowski Convolutional Neural Networks](https://arxiv.org/abs/1904.08755) (CVPR 2019) | [Code](https://github.com/NVIDIA/MinkowskiEngine)
-- **SparseUNet**: [Spconv: Spatially Sparse Convolution Library](https://github.com/traveller59/spconv) | [Code](https://github.com/traveller59/spconv)
-- **Swin3D-S**: [Swin3D: A Pretrained Transformer Backbone for 3D Indoor Scene Understanding](https://arxiv.org/abs/2304.06906) (ICCV 2023) | [Code](https://github.com/microsoft/Swin3D)
-- **PTv1**: [Point Transformer](https://arxiv.org/abs/2012.09164) (ICCV 2021) | [Code](https://github.com/POSTECH-CVLab/point-transformer)
-- **PTv2**: [Point Transformer V2: Grouped Vector Attention and Partition-based Pooling](https://arxiv.org/abs/2210.05666) (NeurIPS 2022) | [Code](https://github.com/Gus-Gao/PTv2)
-
-#### Datasets:
-- **S3DIS**: [3D Semantic Parsing of Large-Scale Indoor Spaces](http://buildingparser.stanford.edu/dataset.html) (CVPR 2016)
-- **SensatUrban**: [Towards Semantic Segmentation of Urban-Scale Photorealistic Point Clouds](https://github.com/QingyongHu/SensatUrban) (IJCV 2021)
-- **BuildingNet**: [Learning to Generate 3D Building Models](https://buildingnet.org/) (ICCV 2021)
-
 ## Citation
 If you find this project useful in your research, please consider citing:
 
