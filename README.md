@@ -18,8 +18,6 @@ SRBIM: A Unified Framework and Dataset for 3D Semantic Reconstruction of Built  
 - [Data Preparation](#data-preparation)
 - [Quick Start](#quick-start)
 <!-- - [Model Zoo](#model-zoo) -->
-- [Results](#results)
-- [Acknowledgement](#acknowledgement)
 - [Citation](#citation)
 
 ## TODO
